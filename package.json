@@ -1,0 +1,35 @@
+{
+  "name": "erc777acceptany",
+  "version": "0.0.1",
+  "description": "Contract used by multisigs a and proxies to accept any ERC777 token.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build; mocha --harmony --exit",
+    "sol-compile": "solcpiler -i './contracts/*.sol' --solc-version=\"v0.4.24+commit.e67f0147\"",
+    "build": "npm run sol-compile",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "erc777",
+    "token",
+    "contract",
+    "solidity",
+    "erc820",
+    "ethereum"
+  ],
+  "author": "Jordi Baylina",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "eth-contract-class": "0.0.8",
+    "ethereumjs-tx": "^1.3.3",
+    "ethereumjs-util": "^5.1.3",
+    "lerna": "^2.5.1",
+    "web3": "^1.0.0-beta.29"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "ganache-cli": "^7.0.0-beta.0",
+    "mocha": "^4.1.0",
+    "solcpiler": "0.0.17"
+  }
+}
