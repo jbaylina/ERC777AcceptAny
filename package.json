@@ -1,6 +1,6 @@
 {
   "name": "erc777acceptany",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Contract used by multisigs a and proxies to accept any ERC777 token.",
   "main": "index.js",
   "scripts": {

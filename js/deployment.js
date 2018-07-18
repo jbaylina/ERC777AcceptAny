@@ -8,7 +8,7 @@ generateDeployTx = () => {
     const rawTx = {
         nonce: 0,
         gasPrice: 100000000000,
-        gasLimit: 800000,
+        gasLimit: 200000,
         value: 0,
         data: code,
         v: 27,
